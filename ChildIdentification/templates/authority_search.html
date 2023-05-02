@@ -1,0 +1,81 @@
+{%include "aheader.html" %}
+<head>
+
+	<style>
+.alert {
+  padding: 10px;
+  background-color:#78281F ;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 28px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+
+</head>
+
+				<div class="page-title">
+					<div class="container">
+						<h2>Search Missing Child</h2>
+					</div>
+				</div>
+			</header>
+		</div>
+
+<div class="fullwidth-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+
+							 {% if message %}
+
+           <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+			    <strong>{{message}}</strong>
+</div>
+    {% endif %}
+
+							<div class="boxed-section request-form">
+								<h2 class="section-title text-center">Search Missing Child</h2>
+								<form action="{{ url_for('authority_search2')}}" method="post" enctype="multipart/form-data">
+									<p>
+									<label for="message">Select Photo</label>
+										<span class="control"><input type="file"   id="website" name="file"  required></span>
+								</p>
+									<p class="text-right">
+									<input type="submit" value="Search">
+								</p>
+								</form>
+
+							</div> <!-- .boxed-section .request-form -->
+
+						</div>
+						<br>
+
+								<center><a href="#"><img src="{{ url_for('static',filename='images/search.png')}}" width="300" height="300" alt="student 1"></a></li>
+
+	</center>
+
+					</div>
+
+				</div>
+
+</div>
+
+
+
+	<br>		<br>
+
+{%include "footer.html" %}

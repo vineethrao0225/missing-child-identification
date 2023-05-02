@@ -1,0 +1,34 @@
+To Execute you need to load few libraries 
+
+Package                 Version
+----------------------- -------
+click                   8.0.4
+colorama                0.4.5
+dataclasses             0.8
+dlib                    19.8.1
+face-recognition        1.3.0
+face-recognition-models 0.3.0
+Flask                   2.0.3
+importlib-metadata      4.8.3
+itsdangerous            2.0.1
+Jinja2                  3.0.3
+joblib                  1.1.1
+MarkupSafe              2.0.1
+mysql-connector         2.2.9
+mysql-connector-python  8.0.26
+numpy                   1.19.5
+pandas                  1.1.5
+Pillow                  8.4.0
+pip                     21.3.1
+protobuf                3.19.6
+python-dateutil         2.8.2
+pytz                    2023.3
+scikit-learn            0.24.2
+scipy                   1.5.4
+setuptools              39.0.1
+six                     1.16.0
+sklearn                 0.0
+threadpoolctl           3.1.0
+typing_extensions       4.1.1
+Werkzeug                2.0.3
+zipp                    3.6.0
